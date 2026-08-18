@@ -6,7 +6,7 @@ const stops = [
   { year: "'21", title: "Functional Analyst", org: "Manorama Infosolutions" },
   { year: "'24", title: "Implementation Consultant", org: "TranZact" },
   { year: "'25", title: "Growth Consultant", org: "Bizom" },
-  { year: "'26", title: "Head, ERP & Digital Transformation", org: "Electrowaves Electronics", current: true },
+  { year: "'26", title: "Head - ERP & Digital Transformation", org: "Electrowaves Electronics", current: true },
 ];
 
 export function Journey() {
