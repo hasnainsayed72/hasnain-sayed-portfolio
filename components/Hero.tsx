@@ -41,7 +41,7 @@ const nodes = [
 
 export function Hero() {
   return (
-    <section id="top" className="relative pt-28 pb-16 md:pt-36 md:pb-20 grid-lines">
+    <section id="top" className="relative pt-20 pb-16 md:pt-24 md:pb-20 grid-lines">
       <div className="max-w-6xl mx-auto px-6 md:px-8 grid md:grid-cols-[1.1fr_0.9fr] gap-12 items-center">
         <Reveal>
           <span className="inline-flex items-center gap-2 glass-pill px-4 py-2 rounded-full eyebrow mb-4 border border-accent/20 shadow-lg shadow-accent/5">
