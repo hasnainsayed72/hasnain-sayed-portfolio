@@ -59,7 +59,7 @@ const jobs: Job[] = [
       "Implemented and supported HMIS systems for major Mumbai hospitals and an international healthcare integration.",
     points: [
       "Integrated Nair Hospital (MCGM), Wockhardt & other MCGM hospitals with HMIS",
-      "Selected for an international project - Ministry of Health, Seychelles",
+      "Selected for an international project for Ministry of Health of Seychelles, East Africa",
       "Documented requirements, risks, and business process flows",
       "Worked across EMR, EHR, Registration & Billing, LIS, RIS modules",
     ],
