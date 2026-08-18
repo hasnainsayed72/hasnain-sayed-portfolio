@@ -39,7 +39,7 @@ export function Journey() {
               <RevealItem key={s.title} className="min-w-[170px] md:min-w-0 flex flex-col items-center md:items-start group">
                 <div
                   className={`w-12 h-12 rounded-2xl flex items-center justify-center mb-4 relative font-mono text-xs font-semibold shadow-lg transition-all duration-300 group-hover:scale-110 ${s.current
-                    ? "bg-gradient-to-br from-accent to-good text-[#03131A] shadow-accent/20 ring-4 ring-accent/20 glow-dot"
+                    ? "bg-gradient-to-br from-accent to-good text-white shadow-accent/20 ring-4 ring-accent/20 glow-dot"
                     : "glass-panel bg-surface border border-white/10 text-accent group-hover:border-accent/40"
                     }`}
                 >

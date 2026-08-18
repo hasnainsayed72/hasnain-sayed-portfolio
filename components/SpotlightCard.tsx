@@ -12,7 +12,7 @@ type SpotlightCardProps = {
 export function SpotlightCard({
   children,
   className = "",
-  spotlightColor = "rgba(34, 211, 238, 0.15)",
+  spotlightColor = "rgba(36, 95, 115, 0.2)",
 }: SpotlightCardProps) {
   const divRef = useRef<HTMLDivElement>(null);
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -39,7 +39,7 @@ export function SpotlightCard({
       whileHover={{ y: -6, scale: 1.015 }}
       whileTap={{ scale: 0.98 }}
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
-      className={`card relative overflow-hidden rounded-3xl border border-white/10 ${className}`}
+      className={`card relative overflow-hidden rounded-3xl border border-border ${className}`}
     >
       {/* Interactive mouse spotlight glow */}
       <div

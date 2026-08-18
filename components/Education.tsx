@@ -1,9 +1,11 @@
 import { GraduationCap, Award, ExternalLink } from "lucide-react";
 import { Reveal } from "./Reveal";
+import { AmbientConstellation } from "./AmbientConstellation";
 
 export function Education() {
   return (
-    <section className="py-24 border-t border-white/5 bg-surface/30 relative">
+    <section className="py-24 border-t border-white/5 bg-surface/30 relative overflow-hidden">
+      <AmbientConstellation position="bottom-right" />
       <div className="max-w-6xl mx-auto px-6 md:px-8 grid md:grid-cols-2 gap-12">
         <Reveal>
           <span className="eyebrow flex items-center gap-2">
@@ -26,14 +28,14 @@ export function Education() {
                 </div>
               </div>
             </div>
-            
+
             <div className="card rounded-2xl p-6 border border-white/10 hover:border-accent/40 transition-all duration-300 group">
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 rounded-xl glass-pill flex items-center justify-center text-text-dim shrink-0 border border-white/10 group-hover:scale-110 transition-transform">
                   <GraduationCap size={20} />
                 </div>
                 <div>
-                  <div className="font-bold text-base text-text">HSC — Science (PCMB)</div>
+                  <div className="font-bold text-base text-text">HSC - Science (PCMB)</div>
                   <div className="text-sm text-text-dim mt-1 font-medium">Rizvi College of Arts, Science &amp; Commerce, Mumbai</div>
                   <div className="text-xs text-text-faint font-mono mt-3 inline-block glass-pill px-3 py-1 rounded-full border border-white/10">
                     2014 – 2016

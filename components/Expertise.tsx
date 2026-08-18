@@ -1,6 +1,7 @@
 import { Search, FileCheck2, Layers, ClipboardCheck, Rocket, CheckCircle2 } from "lucide-react";
 import { Reveal, RevealStagger, RevealItem } from "./Reveal";
 import { SpotlightCard } from "./SpotlightCard";
+import { AmbientConstellation } from "./AmbientConstellation";
 
 const stages = [
   { icon: Search, title: "Discovery", desc: "Stakeholder interviews, current-state mapping, gap analysis" },
@@ -13,7 +14,8 @@ const stages = [
 
 export function Expertise() {
   return (
-    <section id="expertise" className="py-24 md:py-32 border-t border-white/5 bg-surface/40 relative">
+    <section id="expertise" className="py-24 md:py-32 border-t border-white/5 bg-surface/40 relative overflow-hidden">
+      <AmbientConstellation position="bottom-left" />
       <div className="max-w-6xl mx-auto px-6 md:px-8">
         <Reveal className="mb-8">
           <span className="eyebrow flex items-center gap-2">
