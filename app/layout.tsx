@@ -29,18 +29,18 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Mohammad Hasnain Sayed — Head of ERP & Digital Transformation",
   description:
-    "Mohammad Hasnain Sayed — ERP & Digital Transformation leader with 6+ years driving 45+ SaaS and ERP implementations across Healthcare, Manufacturing, and FMCG.",
+    "Mohammad Hasnain Sayed — ERP & Digital Transformation leader with 7+ years driving 50+ SaaS and ERP implementations across Healthcare, Manufacturing, and FMCG.",
   openGraph: {
     title: "Mohammad Hasnain Sayed — Head of ERP & Digital Transformation",
     description:
-      "6+ years leading ERP transformation, SaaS implementation, and customer success across Healthcare, Manufacturing, and FMCG.",
+      "7+ years leading ERP transformation, SaaS implementation, and customer success across Healthcare, Manufacturing, and FMCG.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Mohammad Hasnain Sayed — Head of ERP & Digital Transformation",
     description:
-      "6+ years leading ERP transformation, SaaS implementation, and customer success across Healthcare, Manufacturing, and FMCG.",
+      "7+ years leading ERP transformation, SaaS implementation, and customer success across Healthcare, Manufacturing, and FMCG.",
   },
 };
 
