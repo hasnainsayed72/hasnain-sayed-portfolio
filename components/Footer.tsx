@@ -13,7 +13,7 @@ export function Footer() {
         <div className="flex items-center gap-2">
           <span className="w-2 h-2 rounded-full bg-accent glow-dot" />
           <span className="font-display font-bold text-lg text-text">Hasnain</span>
-          <span className="text-accent-purple font-mono text-xs font-normal"></span>
+          <span className="text-accent-purple font-mono text-xs font-normal">/ERP</span>
         </div>
 
         <div className="text-xs text-text-faint font-mono text-center">

@@ -21,7 +21,7 @@ export function Nav() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
     };
-    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -31,16 +31,17 @@ export function Nav() {
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className={`max-w-6xl mx-auto rounded-full transition-all duration-300 pointer-events-auto ${scrolled
+        className={`max-w-6xl mx-auto rounded-full transition-all duration-300 pointer-events-auto ${
+          scrolled
             ? "glass-panel bg-surface-glass border border-white/10 shadow-2xl shadow-accent/5 backdrop-blur-xl py-3 px-6"
             : "bg-surface/40 backdrop-blur-md border border-white/5 py-4 px-6"
-          }`}
+        }`}
       >
         <div className="flex items-center justify-between">
           <a href="#top" className="group flex items-center gap-2 font-display font-bold text-lg tracking-tight">
             <span className="w-2.5 h-2.5 rounded-full bg-accent glow-dot group-hover:scale-125 transition-transform" />
-            <span className="text-accent">Hasnain</span>
-            <span className="text-accent-purple font-mono text-xs font-normal"></span>
+            <span className="text-white group-hover:text-accent transition-colors">Hasnain</span>
+            <span className="text-accent-purple font-mono text-xs font-normal">/ERP</span>
           </a>
 
           <nav className="hidden md:flex items-center gap-7 text-sm font-medium">

@@ -17,7 +17,7 @@ export function CursorGlow() {
       mouseY.set(e.clientY);
     };
 
-    window.addEventListener("mousemove", handleMouseMove, { passive: true });
+    window.addEventListener("mousemove", handleMouseMove);
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, [mouseX, mouseY]);
 
@@ -27,7 +27,7 @@ export function CursorGlow() {
       style={{
         x: smoothX,
         y: smoothY,
-        background: "radial-gradient(circle, rgba(36, 95, 115, 0.22) 0%, rgba(115, 62, 36, 0.12) 50%, transparent 70%)",
+        background: "radial-gradient(circle, rgba(34, 211, 238, 0.15) 0%, rgba(168, 85, 247, 0.08) 50%, transparent 70%)",
         borderRadius: "100%",
         filter: "blur(40px)",
       }}

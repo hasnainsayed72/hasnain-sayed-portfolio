@@ -1,11 +1,10 @@
 import { Reveal, RevealStagger, RevealItem } from "./Reveal";
 import { SpotlightCard } from "./SpotlightCard";
-import { AmbientConstellation } from "./AmbientConstellation";
 
 const projects = [
   {
-    tag: "HEALTHCARE · IMPLEMENTATION",
-    title: "HMIS Implementation in Mumbai",
+    tag: "HEALTHCARE · INTEGRATION",
+    title: "Mumbai Hospital HMIS Integration",
     problem:
       "Nair Hospital, Wockhardt, and other MCGM hospitals needed their systems integrated into a shared HMIS without disrupting live patient care.",
     role: "Functional Analyst - requirements, business process documentation, implementation oversight.",
@@ -24,21 +23,18 @@ const projects = [
     stack: ["Govt. Healthcare", "Lab Systems"],
   },
   {
-    tag: "MANUFACTURING · ERP ROLLOUT",
-    title: "Multi-Entity ERP Standardization",
-    problem:
-      "Five group companies operated with fragmented processes, inconsistent item masters, and lack of central visibility into production.",
-    role: "Head - ERP & Digital Transformation - driving vendor alignment, master data accuracy, and cross-departmental workflow design.",
-    outcome:
-      "Standardized sales, purchase, inventory, and production workflows across 5 entities with structured BOMs and real-time operational reporting.",
-    stack: ["ERP Transformation", "BOM Governance", "Supply Chain", "Process Digitization"],
+    tag: "DATA · ANALYTICS",
+    title: "Credit Card Financial Dashboard",
+    problem: "Stakeholders lacked real-time visibility into transaction and customer performance metrics.",
+    role: "Built the dashboard end-to-end from a SQL database.",
+    outcome: "Streamlined reporting and shared findings that directly informed stakeholder decision-making.",
+    stack: ["Power BI", "MySQL", "Excel"],
   },
 ];
 
 export function Projects() {
   return (
-    <section id="projects" className="py-24 md:py-32 border-t border-white/5 relative overflow-hidden">
-      <AmbientConstellation position="top-right-bottom-left" />
+    <section id="projects" className="py-24 md:py-32 border-t border-white/5 relative">
       <div className="max-w-6xl mx-auto px-6 md:px-8">
         <Reveal className="mb-16">
           <span className="eyebrow flex items-center gap-2">

@@ -4,7 +4,6 @@ import { Download, Rocket, ShieldCheck, Globe, Briefcase } from "lucide-react";
 import { motion } from "framer-motion";
 import { Reveal, RevealStagger, RevealItem } from "./Reveal";
 import { Counter } from "./Counter";
-import { Hero3D } from "./Hero3D";
 
 const nodes = [
   {
@@ -29,13 +28,23 @@ const nodes = [
   },
   {
     title: "Customer Success",
-    sub: "SLA management",
-    pos: "top-[275px] left-[152px]",
+    sub: "98%+ SLA",
+    pos: "top-[173px] right-0",
     width: "w-[175px]",
     color: "good",
     floatY: [0, -6, 0],
     delay: 0.5,
     floatDuration: 3.8,
+  },
+  {
+    title: "Digital Transformation",
+    sub: "Process & reporting systems",
+    pos: "top-[275px] left-[152px]",
+    width: "w-[175px]",
+    color: "accent",
+    floatY: [0, 6, 0],
+    delay: 0.65,
+    floatDuration: 4.2,
   },
 ];
 
@@ -85,8 +94,9 @@ export function Hero() {
               <motion.div
                 whileHover={{ scale: 1.06, y: -4 }}
                 transition={{ type: "spring", stiffness: 300, damping: 15 }}
-                className="glass-panel rounded-2xl px-3 py-4 border border-white/10 hover:border-accent/50 hover:shadow-xl hover:shadow-accent/10 transition-all cursor-pointer relative overflow-hidden group"
+                className="glass-panel rounded-2xl p-4 border border-white/10 hover:border-accent/50 hover:shadow-xl hover:shadow-accent/10 transition-all cursor-pointer relative overflow-hidden group"
               >
+                <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-accent via-cyan-400 to-accent" />
                 <div className="absolute -top-6 -right-6 w-16 h-16 bg-accent/10 rounded-full blur-xl group-hover:bg-accent/20 transition-all" />
                 <div className="flex items-center justify-between mb-3">
                   <span className="w-8 h-8 rounded-xl glass-pill flex items-center justify-center text-accent border border-accent/20 group-hover:scale-110 transition-transform">
@@ -97,7 +107,7 @@ export function Hero() {
                 <div className="font-display font-extrabold text-2xl sm:text-3xl text-gradient-cyan tracking-tight">
                   <Counter target={50} suffix="+" />
                 </div>
-                <div className="font-mono text-[9px] sm:text-[9.5px] font-semibold text-text-dim uppercase tracking-tight mt-1.5 whitespace-nowrap">
+                <div className="font-mono text-[10px] font-semibold text-text-dim uppercase tracking-wider mt-1.5">
                   Implementations
                 </div>
               </motion.div>
@@ -108,8 +118,9 @@ export function Hero() {
               <motion.div
                 whileHover={{ scale: 1.06, y: -4 }}
                 transition={{ type: "spring", stiffness: 300, damping: 15 }}
-                className="glass-panel rounded-2xl px-3 py-4 border border-white/10 hover:border-accent/50 hover:shadow-xl hover:shadow-accent/10 transition-all cursor-pointer relative overflow-hidden group"
+                className="glass-panel rounded-2xl p-4 border border-white/10 hover:border-accent/50 hover:shadow-xl hover:shadow-accent/10 transition-all cursor-pointer relative overflow-hidden group"
               >
+                <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-accent via-teal-400 to-accent" />
                 <div className="absolute -top-6 -right-6 w-16 h-16 bg-accent/10 rounded-full blur-xl group-hover:bg-accent/20 transition-all" />
                 <div className="flex items-center justify-between mb-3">
                   <span className="w-8 h-8 rounded-xl glass-pill flex items-center justify-center text-accent border border-accent/20 group-hover:scale-110 transition-transform">
@@ -120,7 +131,7 @@ export function Hero() {
                 <div className="font-display font-extrabold text-2xl sm:text-3xl text-accent tracking-tight">
                   <Counter target={98} suffix="%" />
                 </div>
-                <div className="font-mono text-[9px] sm:text-[9.5px] font-semibold text-text-dim uppercase tracking-tight mt-1.5 whitespace-nowrap">
+                <div className="font-mono text-[10px] font-semibold text-text-dim uppercase tracking-wider mt-1.5">
                   SLA Adherence
                 </div>
               </motion.div>
@@ -131,8 +142,9 @@ export function Hero() {
               <motion.div
                 whileHover={{ scale: 1.06, y: -4 }}
                 transition={{ type: "spring", stiffness: 300, damping: 15 }}
-                className="glass-panel rounded-2xl px-3 py-4 border border-white/10 hover:border-accent-purple/50 hover:shadow-xl hover:shadow-accent-purple/10 transition-all cursor-pointer relative overflow-hidden group"
+                className="glass-panel rounded-2xl p-4 border border-white/10 hover:border-accent-purple/50 hover:shadow-xl hover:shadow-accent-purple/10 transition-all cursor-pointer relative overflow-hidden group"
               >
+                <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-accent-purple via-purple-400 to-accent-purple" />
                 <div className="absolute -top-6 -right-6 w-16 h-16 bg-accent-purple/10 rounded-full blur-xl group-hover:bg-accent-purple/20 transition-all" />
                 <div className="flex items-center justify-between mb-3">
                   <span className="w-8 h-8 rounded-xl glass-pill flex items-center justify-center text-accent-purple border border-accent-purple/20 group-hover:scale-110 transition-transform">
@@ -143,7 +155,7 @@ export function Hero() {
                 <div className="font-display font-extrabold text-2xl sm:text-3xl text-gradient-purple tracking-tight">
                   <Counter target={3} />
                 </div>
-                <div className="font-mono text-[9px] sm:text-[9.5px] font-semibold text-text-dim uppercase tracking-tight mt-1.5 whitespace-nowrap">
+                <div className="font-mono text-[10px] font-semibold text-text-dim uppercase tracking-wider mt-1.5">
                   Industries
                 </div>
               </motion.div>
@@ -154,8 +166,9 @@ export function Hero() {
               <motion.div
                 whileHover={{ scale: 1.06, y: -4 }}
                 transition={{ type: "spring", stiffness: 300, damping: 15 }}
-                className="glass-panel rounded-2xl px-3 py-4 border border-white/10 hover:border-good/50 hover:shadow-xl hover:shadow-good/10 transition-all cursor-pointer relative overflow-hidden group"
+                className="glass-panel rounded-2xl p-4 border border-white/10 hover:border-good/50 hover:shadow-xl hover:shadow-good/10 transition-all cursor-pointer relative overflow-hidden group"
               >
+                <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-good via-emerald-400 to-good" />
                 <div className="absolute -top-6 -right-6 w-16 h-16 bg-good/10 rounded-full blur-xl group-hover:bg-good/20 transition-all" />
                 <div className="flex items-center justify-between mb-3">
                   <span className="w-8 h-8 rounded-xl glass-pill flex items-center justify-center text-good border border-good/20 group-hover:scale-110 transition-transform">
@@ -166,7 +179,7 @@ export function Hero() {
                 <div className="font-display font-extrabold text-2xl sm:text-3xl text-good tracking-tight">
                   <Counter target={7} suffix="+" />
                 </div>
-                <div className="font-mono text-[9px] sm:text-[9.5px] font-semibold text-text-dim uppercase tracking-tight mt-1.5 whitespace-nowrap">
+                <div className="font-mono text-[10px] font-semibold text-text-dim uppercase tracking-wider mt-1.5">
                   Years Exp.
                 </div>
               </motion.div>
@@ -174,8 +187,95 @@ export function Hero() {
           </RevealStagger>
         </Reveal>
 
-        <Reveal delay={0.15} className="mx-auto hidden sm:block">
-          <Hero3D />
+        <Reveal delay={0.15} className="relative w-[480px] h-[420px] mx-auto hidden sm:block">
+          <svg className="absolute inset-0 w-full h-full" viewBox="0 0 480 420" fill="none">
+            <motion.line
+              x1="240"
+              y1="165"
+              x2="240"
+              y2="145"
+              className="node-line"
+              initial={{ pathLength: 0, opacity: 0 }}
+              animate={{ pathLength: 1, opacity: 0.6 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            />
+            <motion.line
+              x1="195"
+              y1="210"
+              x2="175"
+              y2="210"
+              className="node-line"
+              initial={{ pathLength: 0, opacity: 0 }}
+              animate={{ pathLength: 1, opacity: 0.6 }}
+              transition={{ duration: 0.6, delay: 0.35 }}
+            />
+            <motion.line
+              x1="285"
+              y1="210"
+              x2="305"
+              y2="210"
+              className="node-line"
+              initial={{ pathLength: 0, opacity: 0 }}
+              animate={{ pathLength: 1, opacity: 0.6 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+            />
+            <motion.line
+              x1="240"
+              y1="255"
+              x2="240"
+              y2="275"
+              className="node-line"
+              initial={{ pathLength: 0, opacity: 0 }}
+              animate={{ pathLength: 1, opacity: 0.6 }}
+              transition={{ duration: 0.6, delay: 0.65 }}
+            />
+          </svg>
+
+          {nodes.map((n) => (
+            <motion.div
+              key={n.title}
+              className={`absolute ${n.width} ${n.pos}`}
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 0.6,
+                delay: n.delay,
+                ease: "easeOut",
+              }}
+            >
+              <motion.div
+                animate={{ y: n.floatY }}
+                transition={{
+                  duration: n.floatDuration,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+                whileHover={{ scale: 1.05, y: -4 }}
+                className="card rounded-xl px-3.5 py-2.5 h-[74px] flex flex-col justify-center transition-shadow duration-300 hover:border-accent/60 hover:shadow-lg hover:shadow-accent/10 cursor-pointer"
+              >
+                <div className="flex items-center gap-2 mb-1">
+                  <span
+                    className={`w-1.5 h-1.5 rounded-full shrink-0 ${n.color === "good" ? "bg-good glow-dot-good" : "bg-accent glow-dot"
+                      }`}
+                  />
+                  <span className="text-[13px] font-semibold whitespace-nowrap">{n.title}</span>
+                </div>
+                <div className="text-[11px] text-text-faint whitespace-nowrap truncate">{n.sub}</div>
+              </motion.div>
+            </motion.div>
+          ))}
+
+          <motion.div
+            className="absolute rounded-2xl flex items-center justify-center card top-[165px] left-[195px] w-[90px] h-[90px] border-accent/40 shadow-lg shadow-accent/5"
+            animate={{ scale: [1, 1.03, 1] }}
+            transition={{
+              duration: 3,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          >
+            <span className="font-display font-bold text-2xl text-accent">HS</span>
+          </motion.div>
         </Reveal>
       </div>
     </section>

@@ -1,5 +1,4 @@
 import { Reveal } from "./Reveal";
-import { AmbientConstellation } from "./AmbientConstellation";
 
 type Job = {
   period: string;
@@ -68,8 +67,7 @@ const jobs: Job[] = [
 
 export function Experience() {
   return (
-    <section id="experience" className="py-24 md:py-32 border-t border-white/5 relative overflow-hidden">
-      <AmbientConstellation position="top-right" />
+    <section id="experience" className="py-24 md:py-32 border-t border-white/5 relative">
       <div className="max-w-4xl mx-auto px-6 md:px-8">
         <Reveal className="mb-16">
           <span className="eyebrow flex items-center gap-2">

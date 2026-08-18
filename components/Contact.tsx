@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { Mail, Phone, MapPin, Copy, Check, ArrowUpRight } from "lucide-react";
 import { Reveal } from "./Reveal";
-import { AmbientConstellation } from "./AmbientConstellation";
 
 export function Contact() {
   const [copied, setCopied] = useState(false);
@@ -15,8 +14,7 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 md:py-32 border-t border-white/5 relative overflow-hidden">
-      <AmbientConstellation position="split" />
+    <section id="contact" className="py-24 md:py-32 border-t border-white/5 relative">
       <div className="max-w-4xl mx-auto px-6 md:px-8">
         <Reveal>
           <div className="card rounded-3xl p-8 sm:p-12 border border-white/10 relative overflow-hidden text-center shadow-2xl">
@@ -33,7 +31,7 @@ export function Contact() {
             </h2>
 
             <p className="text-text-dim text-base sm:text-lg max-w-xl mx-auto mb-10 leading-relaxed">
-              Whether it&apos;s a complex multi-entity ERP rollout, a SaaS deployment, or a digital transformation program needing execution ownership - I&apos;m ready to talk it through.
+              Whether it&apos;s a complex multi-entity ERP rollout, a SaaS deployment, or a digital transformation program needing execution ownership — I&apos;m ready to talk it through.
             </p>
 
             <div className="flex flex-wrap justify-center gap-4 mb-12">

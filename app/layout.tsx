@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
 import { ScrollProgress } from "@/components/ScrollProgress";
 import { CursorGlow } from "@/components/CursorGlow";
-import { SmoothScroll } from "@/components/SmoothScroll";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -52,19 +51,17 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${spaceGrotesk.variable} ${inter.variable} ${jetbrainsMono.variable}`}>
       <body className="font-body bg-bg text-text bg-noise relative antialiased selection:bg-accent/30 selection:text-white">
-        <SmoothScroll>
-          <ScrollProgress />
-          <CursorGlow />
+        <ScrollProgress />
+        <CursorGlow />
+        
+        {/* Ambient Glowing Mesh Background Orbs */}
+        <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
+          <div className="absolute -top-[20%] -left-[10%] w-[50vw] h-[50vw] rounded-full bg-accent/10 blur-[140px] animate-pulse-glow" />
+          <div className="absolute top-[40%] -right-[15%] w-[45vw] h-[45vw] rounded-full bg-accent-purple/10 blur-[160px] animate-pulse-glow" style={{ animationDelay: "2s" }} />
+          <div className="absolute -bottom-[10%] left-[20%] w-[40vw] h-[40vw] rounded-full bg-good/10 blur-[150px] animate-pulse-glow" style={{ animationDelay: "4s" }} />
+        </div>
 
-          {/* Ambient Glowing Mesh Background Orbs */}
-          <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
-            <div className="absolute -top-[20%] -left-[10%] w-[50vw] h-[50vw] rounded-full bg-accent/20 blur-[140px] animate-pulse-glow" />
-            <div className="absolute top-[40%] -right-[15%] w-[45vw] h-[45vw] rounded-full bg-accent-purple/25 blur-[160px] animate-pulse-glow" style={{ animationDelay: "2s" }} />
-            <div className="absolute -bottom-[10%] left-[20%] w-[40vw] h-[40vw] rounded-full bg-good/20 blur-[150px] animate-pulse-glow" style={{ animationDelay: "4s" }} />
-          </div>
-
-          <div className="relative z-10">{children}</div>
-        </SmoothScroll>
+        <div className="relative z-10">{children}</div>
       </body>
     </html>
   );
