@@ -33,7 +33,7 @@ export function Contact() {
             </h2>
 
             <p className="text-text-dim text-base sm:text-lg max-w-xl mx-auto mb-10 leading-relaxed">
-              Whether it&apos;s a complex multi-entity ERP rollout, a SaaS deployment, or a digital transformation program needing execution ownership — I&apos;m ready to talk it through.
+              Whether it&apos;s a complex multi-entity ERP rollout, a SaaS deployment, or a digital transformation program needing execution ownership - I&apos;m ready to talk it through.
             </p>
 
             <div className="flex flex-wrap justify-center gap-4 mb-12">
