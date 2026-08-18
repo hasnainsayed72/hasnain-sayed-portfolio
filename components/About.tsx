@@ -29,8 +29,6 @@ export function About() {
         </Reveal>
 
         <Reveal delay={0.1} className="glass-panel p-8 rounded-3xl border border-white/10 space-y-6 text-text-dim leading-relaxed shadow-2xl relative">
-          <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-accent via-accent-purple to-good rounded-t-3xl" />
-
           <p className="text-base text-text">
             I sit at the point where a business&apos;s daily operations meet the
             software meant to run them - and I make sure that meeting goes seamlessly.
